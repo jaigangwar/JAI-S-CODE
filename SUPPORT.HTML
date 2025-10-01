@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUPPORT</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #191414 0%, #232323 60%, #444 100%);
+      color: #fff;
+      min-height: 100vh;
+    }
+    header {
+      background: rgba(25, 20, 20, 0.95);
+      color: #fff;
+      padding: 18px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+    }
+    header .logo {
+      font-size: 26px;
+      font-weight: bold;
+      color: #1db954;
+      letter-spacing: 1px;
+      text-shadow: 0 2px 8px rgba(30,185,84,0.2);
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 28px;
+      font-size: 17px;
+      font-weight: 500;
+      position: relative;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: #1db954;
+    }
+    .hero {
+      margin: 40px 0 30px 0;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+      color: #fff;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    }
+    .hero input {
+      width: 60%;
+      padding: 15px 22px;
+      font-size: 17px;
+      border: none;
+      border-radius: 30px;
+      max-width: 420px;
+      background: #232323;
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(30,185,84,0.08);
+      outline: none;
+      transition: box-shadow 0.2s, background 0.2s;
+    }
+    .hero input:focus {
+      background: #191414;
+      box-shadow: 0 0 0 2px #1db954;
+    }
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 28px;
+      padding: 48px 20px 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .card {
+      background: linear-gradient(135deg, #232323 60%, #1db954 100%);
+      border-radius: 18px;
+      box-shadow: 0 4px 24px rgba(30,185,84,0.10), 0 1.5px 8px rgba(0,0,0,0.10);
+      padding: 32px 18px;
+      text-align: center;
+      color: #fff;
+      font-size: 1.18rem;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      transition: transform 0.22s, box-shadow 0.22s, background 0.22s;
+      cursor: pointer;
+      border: 1.5px solid transparent;
+    }
+    .card:hover {
+      transform: translateY(-10px) scale(1.04);
+      box-shadow: 0 8px 32px rgba(30,185,84,0.18), 0 2px 12px rgba(0,0,0,0.13);
+      background: linear-gradient(135deg, #1db954 60%, #232323 100%);
+      border: 1.5px solid #1db954;
+    }
+    footer {
+      background: rgba(25, 20, 20, 0.98);
+      color: #b3b3b3;
+      text-align: center;
+      padding: 36px 20px 24px 20px;
+      font-size: 15px;
+      letter-spacing: 0.2px;
+      border-top: 1.5px solid #232323;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Spotify</div>
+    <nav>
+      <a href="#">Premium</a>
+      <a href="#">Support</a>
+      <a href="#">Download</a>
+      <a href="#">Log In</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>How can we help you?</h1>
+    <input type="text" placeholder="Search...">
+  </section>
+
+  <section class="categories">
+    <div class="card">Account Help</div>
+    <div class="card">Plans</div>
+    <div class="card">App Help</div>
+    <div class="card">Payment</div>
+    <div class="card">Device Support</div>
+    <div class="card">Privacy & Security</div>
+  </section>
+
+  <footer>
+    © 2025 Spotify Clone. All rights reserved.
+  </footer>
+</body>
+</html>
